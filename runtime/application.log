@@ -1,0 +1,346 @@
+2013/10/09 13:37:07 [error] [php] Invalid argument supplied for foreach() (/home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php:82)
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#1 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#2 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#3 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php (82)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/09 13:37:26 [error] [php] include(loadFile.php): failed to open stream: No such file or directory (/usr/share/php/libs/yii/1.1.13/YiiBase.php:421)
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/YiiBase.php(204): spl_autoload_call()
+#1 /usr/share/php/libs/yii/1.1.13/web/CController.php(440): createComponent()
+#2 /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php(94): DefaultController->createActionFromMap()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(417): DefaultController->createActionFromMap()
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(259): DefaultController->createAction()
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php (94)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/09 13:37:30 [error] [php] include(loadFile.php): failed to open stream: No such file or directory (/usr/share/php/libs/yii/1.1.13/YiiBase.php:421)
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/YiiBase.php(204): spl_autoload_call()
+#1 /usr/share/php/libs/yii/1.1.13/web/CController.php(440): createComponent()
+#2 /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php(94): DefaultController->createActionFromMap()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(417): DefaultController->createActionFromMap()
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(259): DefaultController->createAction()
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php (94)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/09 13:37:31 [error] [php] include(loadFile.php): failed to open stream: No such file or directory (/usr/share/php/libs/yii/1.1.13/YiiBase.php:421)
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/YiiBase.php(204): spl_autoload_call()
+#1 /usr/share/php/libs/yii/1.1.13/web/CController.php(440): createComponent()
+#2 /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php(94): DefaultController->createActionFromMap()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(417): DefaultController->createActionFromMap()
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(259): DefaultController->createAction()
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php (94)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/09 13:40:26 [error] [exception.CException] exception 'CException' with message 'Property "LoadFile.module" is not defined.' in /usr/share/php/libs/yii/1.1.13/base/CComponent.php:130
+Stack trace:
+#0 /home/andrej/projects/tools/protected/components/actions/loadFile.php(17): CComponent->__get('module')
+#1 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#2 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): CAction->runWithParams(Array)
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): CController->runAction(Object(LoadFile))
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): CController->runActionWithFilters(Object(LoadFile), Array)
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('loadfile')
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#7 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/admin/default/loadfile
+---
+2013/10/09 13:42:21 [error] [exception.CException] exception 'CException' with message 'LoadFile and its behaviors do not have a method or closure named "render".' in /usr/share/php/libs/yii/1.1.13/base/CComponent.php:265
+Stack trace:
+#0 /home/andrej/projects/tools/protected/components/actions/loadFile.php(35): CComponent->__call('render', Array)
+#1 /home/andrej/projects/tools/protected/components/actions/loadFile.php(35): LoadFile->render('index', Array)
+#2 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): CController->runAction(Object(LoadFile))
+#5 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): CController->runActionWithFilters(Object(LoadFile), Array)
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('loadfile')
+#7 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#8 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/admin/default/loadfile
+---
+2013/10/09 13:44:26 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/loadfile".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:878
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(782): CController->renderPartial('/loadfile', Array, true)
+#1 /home/andrej/projects/tools/protected/components/actions/loadFile.php(35): CController->render('/loadfile', Array)
+#2 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): CController->runAction(Object(LoadFile))
+#5 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): CController->runActionWithFilters(Object(LoadFile), Array)
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('loadfile')
+#7 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#8 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/admin/default/loadfile
+---
+2013/10/09 14:15:27 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "loadfile".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:878
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(782): CController->renderPartial('loadfile', Array, true)
+#1 /home/andrej/projects/tools/protected/components/actions/loadFile.php(35): CController->render('loadfile', Array)
+#2 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): CController->runAction(Object(LoadFile))
+#5 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): CController->runActionWithFilters(Object(LoadFile), Array)
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('loadfile')
+#7 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#8 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/admin/default/loadfile
+---
+2013/10/09 14:30:11 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/blocks/header".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:878
+Stack trace:
+#0 /home/andrej/projects/tools/protected/views/admin/layouts/main.php(23): CController->renderPartial('/blocks/header')
+#1 /usr/share/php/libs/yii/1.1.13/web/CBaseController.php(126): require('/home/andrej/pr...')
+#2 /usr/share/php/libs/yii/1.1.13/web/CBaseController.php(95): CBaseController->renderInternal('/home/andrej/pr...', Array, true)
+#3 /usr/share/php/libs/yii/1.1.13/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/andrej/pr...', Array, true)
+#4 /usr/share/php/libs/yii/1.1.13/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /usr/share/php/libs/yii/1.1.13/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /usr/share/php/libs/yii/1.1.13/web/CBaseController.php(206): COutputProcessor->run()
+#7 /usr/share/php/libs/yii/1.1.13/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 /home/andrej/projects/tools/protected/views/admin/layouts/default.php(6): CBaseController->endContent()
+#9 /usr/share/php/libs/yii/1.1.13/web/CBaseController.php(126): require('/home/andrej/pr...')
+#10 /usr/share/php/libs/yii/1.1.13/web/CBaseController.php(95): CBaseController->renderInternal('/home/andrej/pr...', Array, true)
+#11 /usr/share/php/libs/yii/1.1.13/web/CController.php(784): CBaseController->renderFile('/home/andrej/pr...', Array, true)
+#12 /home/andrej/projects/tools/protected/components/actions/loadFile.php(36): CController->render('/loadfile', Array)
+#13 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#14 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): CAction->runWithParams(Array)
+#15 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): CController->runAction(Object(LoadFile))
+#16 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): CController->runActionWithFilters(Object(LoadFile), Array)
+#17 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('loadfile')
+#18 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#19 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/admin/default/loadfile
+---
+2013/10/09 14:30:56 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (21)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/09 14:32:34 [error] [php] include(Files.php): failed to open stream: No such file or directory (/usr/share/php/libs/yii/1.1.13/YiiBase.php:421)
+Stack trace:
+#0 /home/andrej/projects/tools/protected/components/actions/loadFile.php(18): spl_autoload_call()
+#1 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#2 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): LoadFile->runWithParams()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): DefaultController->runAction()
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): DefaultController->runActionWithFilters()
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (18)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/09 14:33:32 [error] [php] include(/home/andrej/projects/tools/protected/modules/admin/models/Files.php): failed to open stream: No such file or directory (/usr/share/php/libs/yii/1.1.13/YiiBase.php:421)
+Stack trace:
+#0 /home/andrej/projects/tools/protected/components/actions/loadFile.php(18): spl_autoload_call()
+#1 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#2 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): LoadFile->runWithParams()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): DefaultController->runAction()
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): DefaultController->runActionWithFilters()
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (18)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/09 14:39:15 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "login".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:878
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(782): CController->renderPartial('login', Array, true)
+#1 /home/andrej/projects/tools/protected/modules/admin/controllers/DefaultController.php(39): CController->render('login', Array)
+#2 /usr/share/php/libs/yii/1.1.13/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('index')
+#7 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#8 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/admin
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---
+2013/10/10 18:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploadfiles/cleanКопия Книга1.xlsx".' in /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('uploadfiles/cle...')
+#1 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/uploadfiles/clean%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F%20%D0%9A%D0%BD%D0%B8%D0%B3%D0%B01.xlsx
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---
+2013/10/10 18:56:48 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (21)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/10 18:59:38 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (21)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/15 11:28:41 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 11:52:28 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 11:54:14 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 11:55:31 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 11:56:28 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 11:57:39 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 11:58:39 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:03:37 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:03:37 [error] [php] Missing argument 1 for CHttpRequest::redirect(), called in /home/andrej/projects/tools/protected/components/actions/loadFile.php on line 89 and defined (/usr/share/php/libs/yii/1.1.13/web/CHttpRequest.php:785)
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#1 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): LoadFile->runWithParams()
+#2 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): DefaultController->runAction()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): DefaultController->runActionWithFilters()
+#4 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (89)
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (36)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:05:21 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:05:21 [error] [php] strpos() expects parameter 1 to be string, array given (/usr/share/php/libs/yii/1.1.13/web/CHttpRequest.php:787)
+Stack trace:
+#0 /home/andrej/projects/tools/protected/components/actions/loadFile.php(36): LoadFile->initFile()
+#1 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#2 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): LoadFile->runWithParams()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): DefaultController->runAction()
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): DefaultController->runActionWithFilters()
+#5 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): DefaultController->run()
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/andrej/projects/tools/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/loadfile
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (89)
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (36)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:05:37 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:483
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(270): CController->missingAction('admin')
+#1 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('admin')
+#2 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/a...')
+#3 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/default/admin/default/loadfile
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---
+2013/10/16 12:05:56 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:483
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(270): CController->missingAction('admin')
+#1 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('admin')
+#2 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/a...')
+#3 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/default/admin
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---
+2013/10/16 12:06:12 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:06:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:483
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(270): CController->missingAction('admin')
+#1 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('admin')
+#2 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/a...')
+#3 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/default/admin/loadFile
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---
+2013/10/16 12:06:18 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:483
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(270): CController->missingAction('admin')
+#1 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('admin')
+#2 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/a...')
+#3 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/default/admin/loadFile
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---
+2013/10/16 12:06:29 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loadFile".' in /usr/share/php/libs/yii/1.1.13/web/CController.php:483
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/web/CController.php(270): CController->missingAction('loadFile')
+#1 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('loadFile')
+#2 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/default/loadFile
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---
+2013/10/16 12:06:42 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:06:48 [warning] [application] Failed to set unsafe attribute "excel" of "Files".
+in /home/andrej/projects/tools/protected/components/actions/loadFile.php (25)
+in /home/andrej/projects/tools/public/index.php (13)
+2013/10/16 12:36:43 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.end" is not defined.' in /usr/share/php/libs/yii/1.1.13/base/CComponent.php:130
+Stack trace:
+#0 /usr/share/php/libs/yii/1.1.13/base/CModule.php(105): CComponent->__get('end')
+#1 /home/andrej/projects/tools/protected/components/actions/loadFile.php(15): CModule->__get('end')
+#2 /usr/share/php/libs/yii/1.1.13/web/actions/CAction.php(76): LoadFile->run()
+#3 /usr/share/php/libs/yii/1.1.13/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php/libs/yii/1.1.13/web/CController.php(286): CController->runAction(Object(LoadFile))
+#5 /usr/share/php/libs/yii/1.1.13/web/CController.php(265): CController->runActionWithFilters(Object(LoadFile), Array)
+#6 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(282): CController->run('loadfile')
+#7 /usr/share/php/libs/yii/1.1.13/web/CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#8 /usr/share/php/libs/yii/1.1.13/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/andrej/projects/tools/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/admin/default/loadfile
+HTTP_REFERER=http://tools.andrej.devel/index.php/admin/default/loadfile
+---

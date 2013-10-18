@@ -1,0 +1,63 @@
+Модуль административных функций.
+
+Действия по умолчанию:
+list - выводит список объектов указанной модели
+create - форма создания нового объекта
+update - форма редактирования объекта
+
+Все действия принимают обязательный параметр model, содержащий имя выводимой модели
+и (пока что) необязательные параметры pid и parent - идентификатор и имя отношения с родительским элементом
+(надо потом на фильтр скрытый переписать).
+Указанная модель должна наследоваться от CmsModel (можно найти в папке data).
+
+Подключение:
+    1) Скопировать содержимое в папку modules
+    2) В конфигурации указать
+        'modules' => array(
+            'admin' => array(
+                // Глобальная соль для всего модуля (используется в модели AdmUsers)
+                'globalsalt' => 'Administrative salt',
+
+                // Куда редиректнуть после авторизации (метода createUrl($url, $params))
+                'default_route'   => array('url' => 'default/list', 'params' => array('model' => 'some_model')),
+
+                // Если указано - шаблоны представлений будут искаться в protected/views/<данная настройка>
+                'site_views_path' => 'admin',
+
+                // Компоненты модуля - пользователь админки
+                'components' => array(
+                    'adminUser' => array(
+                        'allowAutoLogin' => true,
+                        'class'          => 'AdminWebUser',
+                        'loginUrl'       => array('admin'),
+                        'guestName'      => 'Гость',
+                    )
+                ),
+
+                // Для кастомных действий есть настройки перенаправления действий
+                // Все условия должны выполняться, в данном примере - параметр model должен быть равен "resume"
+                // И запрошенное действие должно быть "list"
+                'actions_map' => array(
+                    'resume' => array(
+                        'condition' => array(
+                            'params' => array('model' => 'resume'),
+                            'action' => 'list'
+                        ),
+                        'action' => 'application.components.actions.AdmResumeList'
+                    )
+                )
+            ),
+После авторизации модуль перенаправит вас на страницу, указанную в настройке default_route.
+
+Если вы хотите использовать шаблоны сайта вместо стандартных - укажите путь до корня
+шаблонов в параметре site_views_path. Тогда модуль будет искать свои шаблоны там.
+
+Для удобства можно использовать набор правил адресации
+// Действия модуля admin
+'admin'                                  => 'admin/default/index',
+'admin/<model:\w+>'                      => 'admin/default/list',
+'admin/<model:\w+>/<id:\d+>'             => 'admin/default/show',
+'admin/<model:\w+>/create'               => 'admin/default/create',
+'admin/<model:\w+>/modify/<id:\d+>'      => 'admin/default/modify',
+'admin/<model:\w+>/delete/<id:\d+>'      => 'admin/default/delete',
+
