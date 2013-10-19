@@ -2,6 +2,8 @@
 /* @var $this LoadFileController */
 Yii::app()->getClientScript()->registerCoreScript('jquery');
 ?>
+
+<a href="<?php echo '/admin/default/lingvoleo'; ?>">Получить слова</a>
 <h1>Загрузка файла</h1>
 <?php echo CHtml::form('','post',array('enctype'=>'multipart/form-data')); ?>
 <?php echo '<div>'.CHtml::activeFileField($model, 'excel').'</div>'; ?>

@@ -356,3 +356,268 @@ Stack trace:
 REQUEST_URI=/index.php/admin/default/loadfile
 in D:\Nginx\project\tools\www\protected\components\actions\loadFile.php (23)
 in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 16:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingvoleo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingvoleo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingvoleo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingvoleo
+HTTP_REFERER=http://tools/index.php/admin/default/loadfile
+---
+2013/10/19 16:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingvoleo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingvoleo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingvoleo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingvoleo
+HTTP_REFERER=http://tools/admin/default/loadfile
+---
+2013/10/19 16:16:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingvoleo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingvoleo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingvoleo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingvoleo
+HTTP_REFERER=http://tools/admin/default/loadfile
+---
+2013/10/19 16:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingvoleo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingvoleo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingvoleo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingvoleo
+---
+2013/10/19 16:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingvoleo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingvoleo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingvoleo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingvoleo
+---
+2013/10/19 16:19:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingvoleo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingvoleo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingvoleo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingvoleo
+---
+2013/10/19 16:34:15 [error] [php] Non-static method DataPost::getData() should not be called statically, assuming $this from incompatible context (D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php:19)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 16:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingualeo.php".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingualeo.php')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingualeo.php')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingualeo.php
+HTTP_REFERER=http://tools/admin/default/lingvoleo
+---
+2013/10/19 16:41:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingualeo.php".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingualeo.php')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingualeo.php')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingualeo.php
+HTTP_REFERER=http://tools/admin/default/lingvoleo
+---
+2013/10/19 16:41:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingualeo.php".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingualeo.php')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingualeo.php')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingualeo.php
+HTTP_REFERER=http://tools/admin/default/lingvoleo
+---
+2013/10/19 16:41:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingualeo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingualeo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingualeo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingualeo
+HTTP_REFERER=http://tools/admin/default/lingvoleo
+---
+2013/10/19 16:42:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingualeo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingualeo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingualeo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingualeo
+HTTP_REFERER=http://tools/admin/default/lingvoleo
+---
+2013/10/19 16:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lingualeo".' in D:\Nginx\additions\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\CController.php(270): CController->missingAction('lingualeo')
+#1 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): CController->run('lingualeo')
+#2 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/l...')
+#3 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\Nginx\project\tools\www\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/lingualeo
+---
+2013/10/19 16:43:40 [error] [php] Non-static method DataPost::sendPost() should not be called statically (D:\Nginx\project\tools\www\protected\components\DataPost.php:57)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (57)
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (57)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+2013/10/19 16:54:55 [error] [php] file_put_contents(.\lingualeo\pic\home.png): failed to open stream: No such file or directory (D:\Nginx\project\tools\www\protected\components\DataPost.php:66)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (66)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 16:59:24 [error] [php] copy(d:/nginx/project/tools/www:/Nginx/project/tools/www/protected/../public/lingvoleo/pic/home.png): failed to open stream: Invalid argument (D:\Nginx\project\tools\www\protected\components\DataPost.php:70)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (70)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 17:01:22 [error] [php] file_put_contents(D:\Nginx\project\tools\www\protected/public/lingvoleo/pic/home.png): failed to open stream: No such file or directory (D:\Nginx\project\tools\www\protected\components\DataPost.php:66)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (66)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 17:02:28 [error] [php] file_put_contents(D:\Nginx\project\tools\www\protected\public\lingvoleo\pic\home.png): failed to open stream: No such file or directory (D:\Nginx\project\tools\www\protected\components\DataPost.php:66)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (66)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 17:02:59 [error] [php] copy(d:/nginx/project/tools/www:/Nginx/project/tools/www/protected/../public/lingvoleo/pic/home.png): failed to open stream: Invalid argument (D:\Nginx\project\tools\www\protected\components\DataPost.php:70)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (70)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 17:06:29 [error] [php] file_get_contents(): Filename cannot be empty (D:\Nginx\project\tools\www\protected\components\DataPost.php:66)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (66)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 17:08:48 [error] [php] file_get_contents(): Filename cannot be empty (D:\Nginx\project\tools\www\protected\components\DataPost.php:66)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (66)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)
+2013/10/19 17:09:58 [error] [php] file_put_contents(D:\Nginx\project\tools\www\protected/public/lingvoleo/sound/home.mp3): failed to open stream: No such file or directory (D:\Nginx\project\tools\www\protected\components\DataPost.php:78)
+Stack trace:
+#0 D:\Nginx\additions\yii\framework\web\actions\CAction.php(76): Lingvoleo->run()
+#1 D:\Nginx\additions\yii\framework\web\CController.php(308): Lingvoleo->runWithParams()
+#2 D:\Nginx\additions\yii\framework\web\CController.php(286): DefaultController->runAction()
+#3 D:\Nginx\additions\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 D:\Nginx\additions\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 D:\Nginx\additions\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Nginx\additions\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Nginx\project\tools\www\index.php(14): CWebApplication->run()
+REQUEST_URI=/admin/default/lingvoleo
+in D:\Nginx\project\tools\www\protected\components\DataPost.php (78)
+in D:\Nginx\project\tools\www\protected\components\actions\lingvoleo.php (19)
+in D:\Nginx\project\tools\www\index.php (14)

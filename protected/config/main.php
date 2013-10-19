@@ -43,6 +43,13 @@ return array(
                             'action' => 'loadfile'
                         ),
                         'action' => 'application.components.actions.loadFile'
+                    ),
+                    'lingvoleo' => array(
+                        'condition' => array(
+                            //'params' => '',//array('model' => 'resume'),
+                            'action' => 'lingvoleo'
+                        ),
+                        'action' => 'application.components.actions.lingvoleo'
                     )
                 )
             ),
@@ -67,6 +74,7 @@ return array(
 
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+            'showScriptName' => false,
 			'rules'=>array(
 				'admin'                                  => 'admin/default/index',
 				'admin/<model:\w+>'                      => 'admin/default/list',
