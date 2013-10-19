@@ -1,1 +1,42 @@
-deny from all
+#Кешируем у юзера файлы с указанными расширениями на 1 месяц
+<IfModule mod_expires.c>
+    <FilesMatch "\.(ico|mpg|mov|jpg|jpeg|png|gif|swf|css|js|flv|mp4)$">
+        ExpiresActive On
+        ExpiresDefault "access plus 1 month"
+        ExpiresDefault A604800
+        FileETag MTime Size
+    </FilesMatch>
+</IfModule>
+
+# php_value display_errors 0
+
+AddDefaultCharset UTF-8
+
+#ErrorDocument 404 /
+
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+RewriteBase /
+
+# Если каталог или файла существуют - выдаем его напрямую
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule .+ - [L]
+
+# переносим все что начинается с "www" на БЕЗ "www"
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+# for SEO
+RewriteCond %{REQUEST_URI} !^/robots.txt$
+RewriteCond %{REQUEST_URI} !^/sitemap.xml$
+RewriteCond %{REQUEST_URI} !^/yandexmarket.xml$
+# если в запросе НЕТ "закрывающего слэша"
+# Осуществляет переход со страницы без замыкающего слеша на страницу со слешем.
+# Данный трюк важен для SEO, чтобы рейтинг страницы не расщеплялся на две страницы: со слешем и без него
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
+# otherwise forward it to index.php
+RewriteRule . index.php [L]
